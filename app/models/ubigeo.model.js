@@ -1,0 +1,24 @@
+const { sequelize } = require(".");
+
+module.exports= (sequelize, DataType)=>{
+    const Ubigeo = sequelize.define("ubigeo",{
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            primaryKey: true,
+        },
+        ubigeo:{
+            type: DataType.STRING
+        },
+        departament:{
+            type: DataType.STRING
+        },
+        province:{
+            type: DataType.STRING
+        },
+        district:{
+            type: DataType.STRING
+        }
+    })
+    return Ubigeo;
+}
