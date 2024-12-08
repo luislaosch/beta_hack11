@@ -18,6 +18,9 @@ module.exports= (sequelize, DataType)=>{
         },
         district:{
             type: DataType.STRING
+        },
+        is_active:{
+            type:DataType.BOOLEAN
         }
     })
     return Ubigeo;

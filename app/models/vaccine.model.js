@@ -10,6 +10,9 @@ module.exports= (sequelize, DataType)=>{
         description:{
             type: DataType.STRING
         },
+        is_active:{
+            type:DataType.BOOLEAN
+        }
     })
     return Vaccine;
 }

@@ -7,17 +7,11 @@ module.exports= (sequelize, DataType)=>{
             autoIncrement: true,
             primaryKey: true,
         },
-        ubigeo:{
+        name:{
             type: DataType.STRING
         },
-        departament:{
-            type: DataType.STRING
-        },
-        province:{
-            type: DataType.STRING
-        },
-        district:{
-            type: DataType.STRING
+        birthdate:{
+            type: DataType.DATE
         },
         is_active:{
             type:DataType.BOOLEAN
