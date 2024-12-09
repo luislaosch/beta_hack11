@@ -3,7 +3,7 @@ const { sequelize } = require(".");
 module.exports= (sequelize, DataType)=>{
     const Pet = sequelize.define("pet",{
         id: {
-            type: DataTypes.INTEGER,
+            type: DataType.INTEGER,
             autoIncrement: true,
             primaryKey: true,
         },

@@ -3,7 +3,7 @@ const { sequelize } = require(".");
 module.exports= (sequelize, DataType)=>{
     const Nationality = sequelize.define("nationality",{
         id: {
-            type: DataTypes.INTEGER,
+            type: DataType.INTEGER,
             autoIncrement: true,
             primaryKey: true,
         },

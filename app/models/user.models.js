@@ -3,22 +3,22 @@ const { sequelize } = require(".");
 module.exports= (sequelize, DataType)=>{
     const User = sequelize.define("user",{
         id: {
-            type: DataTypes.INTEGER,
+            type:DataType.INTEGER,
             autoIncrement: true,
             primaryKey: true,
         },
         username: {
-            type: DataTypes.STRING,
+            type:DataType.STRING,
             allowNull: false,
             unique: true,
         },
         last_name: {
-            type: DataTypes.STRING,
+            type:DataType.STRING,
             allowNull: false,
             // allowNull defaults to true
         },
         email: {
-            type: DataTypes.STRING,
+            type:DataType.STRING,
             allowNull: false,
             unique:true
         },

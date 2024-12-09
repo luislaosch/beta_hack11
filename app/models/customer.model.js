@@ -3,12 +3,12 @@ const { sequelize } = require(".");
 module.exports= (sequelize, DataType)=>{
     const Customer = sequelize.define("customer",{
         id: {
-            type: DataTypes.INTEGER,
+            type: DataType.INTEGER,
             autoIncrement: true,
             primaryKey: true,
         },
         dni: {
-            type: DataTypes.STRING,
+            type: DataType.STRING,
             allowNull: false,
             validate: {
             is: /^[0-9]+$/i,
@@ -17,20 +17,20 @@ module.exports= (sequelize, DataType)=>{
         },
         
         name: {
-            type: DataTypes.STRING,
+            type: DataType.STRING,
             allowNull: false,
         },
         last_name: {
-            type: DataTypes.STRING,
+            type: DataType.STRING,
             allowNull: false,
             // allowNull defaults to true
         },
         home_adress: {
-            type: DataTypes.STRING,
+            type: DataType.STRING,
             allowNull: false,
         },
         phone: {
-            type: DataTypes.STRING,
+            type: DataType.STRING,
             allowNull: false,
             validate: {
             is: /^[0-9]+$/i,
