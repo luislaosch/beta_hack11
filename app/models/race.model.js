@@ -7,7 +7,7 @@ module.exports= (sequelize, DataType)=>{
             autoIncrement: true,
             primaryKey: true,
         },
-        destription:{
+        description:{
             type: DataType.STRING
         },
         is_active:{
